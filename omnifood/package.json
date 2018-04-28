@@ -1,0 +1,10 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Loic El Thesea",
+  "license": "MIT",
+  "scripts": {
+    "start": "hot-server --port=8080"
+  }
+}
