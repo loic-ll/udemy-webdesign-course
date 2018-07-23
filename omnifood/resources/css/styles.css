@@ -1,10 +1,9 @@
 /* ======================== */
 /* COLORS REFERENCES
 /* ======================== */
-
-/* orange: #e67e22 */
-
-/* ======================== */
+/* 
+  orange: #e67e22 
+*/
 
 /* ======================== */
 /* BASIC SETUP 
@@ -81,60 +80,6 @@ h3 {
 }
 
 /* ======================== */
-/* HEADER 
-/* ======================== */
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  float: left;
-  height: 100px;
-  width: auto;
-  margin-top: 20px;
-}
-
-.main-nav {
-  float: right;
-  list-style: none;
-  margin-top: 55px;
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  border-bottom: px solid transparent;
-  color: #fff;
-  font-size: 90%;
-  padding: 8px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: border-bottom 0.2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
-}
-
-/* ======================== */
 /* PARAGRAPHS 
 /* ======================== */
 
@@ -161,6 +106,38 @@ header {
   margin-bottom: 10px;
 }
 
+.icon-small {
+  color: #e67e22;
+  display: inline-block;
+  font-size: 120%;
+  margin-right: 10px;
+  text-align: center;
+  width: 30px;
+
+  /* Trick to align text and icons */
+  line-height: 120%;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+
+/* ======================== */
+/* LINKS 
+/* ======================== */
+
+a:link,
+a:visited {
+  border-bottom: 1px solid #e67e22;
+  color: #e67e22;
+  padding-bottom: 1px;
+  text-decoration: none;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:active,
+a:hover {
+  border-bottom: 1px solid transparent;
+  color: #555;
+}
 /* ======================== */
 /* BUTTONS 
 /* ======================== */
@@ -224,6 +201,60 @@ header {
 
 section {
   padding: 80px 0;
+}
+
+/* ======================== */
+/* HEADER 
+/* ======================== */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  float: left;
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  border-bottom: 1px solid transparent;
+  color: #fff;
+  font-size: 90%;
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
 }
 
 /* ======================== */
@@ -322,8 +353,27 @@ section {
   width: 55px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   margin-right: 10px;
   width: auto;
+}
+
+/* ======================== */
+/* SECTION STEPS
+/* ======================== */
+
+.city-photo {
+  height: 100%;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.city-feature i {
+  margin-bottom: 5px;
 }
