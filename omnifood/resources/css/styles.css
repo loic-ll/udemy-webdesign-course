@@ -1,14 +1,13 @@
 /* ======================== */
-/* COLORS 
+/* COLORS REFERENCES
+/* ======================== */
 
-orange: 
-#e67e22
+/* orange: #e67e22 */
 
-*/
 /* ======================== */
 
 /* ======================== */
-/* BASIC SETUP */
+/* BASIC SETUP 
 /* ======================== */
 
 * {
@@ -26,8 +25,20 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ======================== */
-/* HEADINGS */
+/* HEADINGS 
 /* ======================== */
 
 h1,
@@ -70,7 +81,7 @@ h3 {
 }
 
 /* ======================== */
-/* HEADER */
+/* HEADER 
 /* ======================== */
 
 header {
@@ -109,7 +120,7 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  border-bottom: 2px solid transparent;
+  border-bottom: px solid transparent;
   color: #fff;
   font-size: 90%;
   padding: 8px 0;
@@ -124,7 +135,7 @@ header {
 }
 
 /* ======================== */
-/* PARAGRAPHS */
+/* PARAGRAPHS 
 /* ======================== */
 
 .long-copy {
@@ -140,7 +151,7 @@ header {
 }
 
 /* ======================== */
-/* ICONS */
+/* ICONS 
 /* ======================== */
 
 .icon-big {
@@ -151,7 +162,7 @@ header {
 }
 
 /* ======================== */
-/* BUTTONS */
+/* BUTTONS 
 /* ======================== */
 
 .btn:link,
@@ -195,7 +206,7 @@ header {
 }
 
 /* ======================== */
-/* REUSABLE COMPONENTS */
+/* REUSABLE COMPONENTS 
 /* ======================== */
 
 .bb {
@@ -213,4 +224,106 @@ header {
 
 section {
   padding: 80px 0;
+}
+
+/* ======================== */
+/* SECTION FEATURES 
+/* ======================== */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ======================== */
+/* SECTION MEALS 
+/* ======================== */
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.meal-photo img {
+  display: block;
+  height: auto;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  width: 100%;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ======================== */
+/* SECTION STEPS
+/* ======================== */
+
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.steps-box {
+}
+
+.steps-box:first-child {
+  margin-top: 30px;
+  padding-right: 3%;
+  text-align: right;
+}
+
+.steps-box:last-child {
+  margin-top: 70px;
+  padding-right: 3%;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  color: #e67e22;
+  display: inline-block;
+  float: left;
+  font-size: 150%;
+  height: 55px;
+  padding: 5px;
+  margin-right: 25px;
+  text-align: center;
+  width: 55px;
+}
+
+.btn-app img {
+  height: 50px;
+  margin-right: 10px;
+  width: auto;
 }
