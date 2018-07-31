@@ -277,6 +277,19 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navigtion */
+.mobile-nav-icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  margin-top: 30px;
+}
+
+.mobile-nav-icon i {
+  color: #fff;
+  font-size: 200%;
+}
+
 /* Sticky navigtion */
 .sticky {
   background: rgba(255, 255, 255, 0.98);
