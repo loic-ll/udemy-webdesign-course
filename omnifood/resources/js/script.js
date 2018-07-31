@@ -35,4 +35,19 @@ $(document).ready(function() {
       offset: '60px;',
     },
   );
+
+  // Animations on scroll
+  var animateOnScroll = function(targetClassName, animateClassName) {
+    $(targetClassName).waypoint(
+      function() {
+        $(targetClassName).addClass('animated ' + animateClassName);
+      },
+      {offset: '50%'},
+    );
+  };
+
+  animateOnScroll('.js--wp-1', 'fadeIn');
+  animateOnScroll('.js--wp-2', 'fadeInUp');
+  animateOnScroll('.js--wp-3', 'fadeIn');
+  animateOnScroll('.js--wp-4', 'pulse');
 });
